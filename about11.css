@@ -8,7 +8,7 @@
 }
 body {
   min-height: 100vh;
-  background: #0c143f;
+  background: url(bilder/nyb.jpg);
 }
 .navbar img {
   height: 60px;
@@ -41,7 +41,7 @@ body {
 }
 
 .navbar-links:hover {
-  background-color: cyan;
+  background-color: darkcyan;
 }
 .navbar-links:hover a {
   color: black;
@@ -60,18 +60,15 @@ body {
   text-align: center;
 }
 footer {
-  background-color: black;
-  display: flex;
-  position: absolute;
-  bottom: 0%;
-  color: aliceblue;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  flex-wrap: row;
-  justify-content: center;
-  gap: 50px;
-  list-style: none;
-  text-decoration: none;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
+
 i {
   color: aliceblue;
 }
@@ -81,70 +78,83 @@ footer li {
   list-style: none;
   justify-content: space-between;
 }
-footer h3 {
-  margin-top: 6px;
-  display: flex;
-}
+
 footer p a {
   text-decoration: none;
   color: white;
 }
-main {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-p {
-  display: flex;
-  font-size: normal;
-  width: 50%;
-  display: block;
-  text-align: left;
+.column {
   float: left;
-  margin-right: 10px;
-  line-height: 50px;
+  width: 33.3%;
+  margin-bottom: 10px;
+  padding: 0 10px;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgb(250, 246, 246);
+  margin: 20%;
+}
+.about-section {
+  padding: 30px;
+  text-align: center;
+  background-color: #0c143f;
+  color: white;
+  letter-spacing: 1.5px;
+}
+.container {
+  align-content: center;
+  padding: 0 16px;
+  background: black;
+  color: white;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
 h2 {
-  display: flex;
-  justify-content: center;
   color: white;
-  margin-top: 25px;
-  text-decoration: none;
+  font-size: 40px;
   list-style: none;
-}
-h4 {
-  display: flex;
-  justify-content: center;
-  font-size: larger;
-  color: yellowgreen;
+  text-decoration: none;
   margin-top: 20px;
-  margin-right: 10px;
-  border-width: justify;
-  line-height: 50px;
+  text-align: center;
 }
-p a {
-  text-decoration: solid white;
-}
-hr {
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
   color: white;
-}
-main img {
-  margin-top: 20px;
-  display: flex;
-  height: 300px;
-  width: auto;
-}
-a,
-p {
-  color: aliceblue;
-}
-table th tr {
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
   width: 100%;
-  display: flex;
-  border: #3c4e73;
-  background: #3c4e73;
-  width: 100%;
-  border-spacing: 50px 10px;
+}
+
+.button:hover {
+  background-color: darkcyan;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
