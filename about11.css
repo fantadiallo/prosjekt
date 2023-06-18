@@ -147,7 +147,9 @@ h2 {
   cursor: pointer;
   width: 100%;
 }
-
+h1 {
+  color: white;
+}
 .button:hover {
   background-color: darkcyan;
 }

@@ -132,6 +132,9 @@ h4 {
   margin-bottom: 30px;
   letter-spacing: 3px;
 }
+h1 {
+  color: white;
+}
 
 @media (max-width: 800px) {
   .row {

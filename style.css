@@ -102,3 +102,6 @@ main img {
   cursor: pointer;
   border-radius: 20px;
 }
+h1 {
+  color: white;
+}
