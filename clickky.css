@@ -88,12 +88,13 @@ footer p a {
   color: white;
 }
 main {
-  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
   display: flex;
-  justify-content: space-between;
+  color: white;
+  gap: 30px;
+  justify-content: space-evenly;
   background: rgba(53, 51, 51, 0.404);
-  position: relative;
-  top: 50px;
 }
 .button {
   display: flex;
@@ -111,25 +112,21 @@ main {
   border-radius: 20px;
 }
 p {
-  font-size: normal;
-  width: 80%;
-  display: block;
-  text-align: left;
-  float: right;
-  line-height: 50px;
-  color: aliceblue;
-  margin-right: 20px;
+  justify-content: left;
+  text-align: center;
+  line-height: 32px;
+  width: 100%;
+  right: 10px;
 }
 iframe {
   width: 600;
   height: 315;
-  margin-left: 20px;
 }
-img {
-  margin-left: 20px;
-  height: 300;
-  width: 300;
+.tribi {
+  height: 200px;
+  width: auto;
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -138,4 +135,9 @@ h1 {
   color: yellowgreen;
   letter-spacing: 10px;
   margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }

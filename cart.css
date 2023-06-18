@@ -90,12 +90,12 @@ footer p a {
   padding: 0 16px;
 }
 .col-25 {
-  -ms-flex: 25%; /* IE10 */
+  -ms-flex: 25%;
   flex: 25%;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 h2 a {
   color: yellowgreen;
