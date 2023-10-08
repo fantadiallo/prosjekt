@@ -5,83 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cart</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
-      rel="stylesheet"
-    />
-    <script
+    href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
+    rel="stylesheet">
+
+      <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" type="text/css" href="cart.css" />
+      referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </head>
+
   <body>
-    <nav class="navbar">
-      <ul>
-        <li><img src="bilder all/GameHub_Logo (1).png" alt="logo"></li>
-        <li class="navbartoggle"><i class="fas fa-bars"></i></li>
-        <li class="navbar-links"><a href="index.html">Home</a></li>
-        <li class="navbar-links"><a href="games1.html">games</a></li>
-        <li class="navbar-links"><a href="about11.html">about</a></li>
-        <li class="navbar-links"><a href="contact11.html">Contact</a></li>
-        <li class="navbar-links"><a href="cart.html"><i class="fas fas fa-shopping-bag"></i></li>
-      </ul>
+    <header>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><img src="bilder all/GameHub_Logo (1).png" alt=""></i></a>
+        <a href="index.html">Home</a>
+        <a href="games1.html">All Games</a>
+        <a href="about11.html">About</a>
+        <a href="contact11.html">Contact</a>
+        <a href="cart.html"><i class="fas fas fa-shopping-cart"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </nav>
     </header>
+    
     <main>
+<div class="logo"><img src="bilder all/GameHub_Logo (1).png" alt=""></div>
+    <div class="intro">
+     
       <h1>Cart</h1>
-      <h2>
-        <a href="games1.html" class="previous round">&#8249;</a>   Continue shopping
-        <a href="games1.html" class="previous round">&#8249;</a>    back
-      </h2>
-      <hr />
-      <h3>cart > checkout  > Conformation & download ></h3>
-      <h4>Cart<i class="fas fas fa-shopping-bag"></i></h4>
-      <hr>
-        <div class="col-25">
-          <div class="container">
-            <h4>Cart
-              <span class="price" style="color:black">
-                <i class="fa fas fa-shopping-basket"></i>
-                <b>2</b>
-              </span>
-            </h4>
-            <p><img src="bilder/games/shopping.webp" height="100" alt="gta"><a href="games1.html">GTA</a> <span class="price">$100</span></p>
-            <p> <img src="bilder/games/spiderman.webp"height=100 alt="spidermnan"><a href="games1.html">Spiderman</a> <span class="price">$100</span></p>
-            <hr>
-            <p>Total <span class="price" style="color:black"><b>$200</b></span><a href="out.html"></a><button><a href="out.html">Checkout</a></button></a></p>
+      <div class="introp">
+     <p>
+      <a href="games1.html""> Continue shopping > </a>   
+     </p>
+    </div>
+       
+     
+      
+      <hr/> 
+
+      <div class="ut">
+        <h3>Cart</h3>
+          <h3>Checkout</h3> 
+          <h3>Conformation & download</h3> 
+ 
+        </div>
+      <section class="Checkout1">
+        <div class="cartt">
+        <h3>Cart (2) <i class="fas fas fa-shopping-bag"></i></h3>
+      </div>
+        <div class="gamese">
+          <div class="gam1"><img src="bilder/games/fifa23.webp"><div><p>$100</p></div></div>
+          <div class="game2"><img src="bilder/games/call of duty.webp"><div><p>$100</p></div></div>
+ 
+        </div>
+        <hr>
+        <div class="totall">
+        <h5>Total:</h5>
+        <p>$200</p>
+      <div class="btn1"><button class="btn1"><a href="">Checkout</a></button></div>
+
+      </div>
+
     </main>
     <footer>
-      <br>
-      <div class="footer">
-      <ul class="socials">
-        <li>
-          <a href="ttps://www.facebook.com/ "> <i class="fab fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/?lang=nb"> <i class="fab fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="https://www.google.com/"> <i class="fab fa fab fa-google"></i></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/"> <i class="fab fab fa-youtube"></i></a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/en/"> <i class="fab fa fab fa-tiktok"></i></a>
-        </li>
-      </ul>
-       <br>&copy;2023
+      <p> &copy;2023</p>
+      
       </div>
     </footer>
   </body>

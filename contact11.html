@@ -5,44 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
-      rel="stylesheet"
-    />
-    <script
+    href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
+    rel="stylesheet">
+
+      <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" type="text/css" href="contact11.css" />
+      referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="contact11.css">
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </head>
+
   <body>
-    <nav class="navbar">
-      <ul>
-        <li><img src="bilder all/GameHub_Logo (1).png" alt="logo"></li>
-        <li class="navbartoggle"><i class="fas fa-bars"></i></li>
-        <li class="navbar-links"><a href="index.html">Home</a></li>
-        <li class="navbar-links"><a href="games1.html">games</a></li>
-        <li class="navbar-links"><a href="about11.html">about</a></li>
-        <li class="navbar-links"><a href="contact11.html">Contact</a></li>
-        <li class="navbar-links"><a href="cart.html"><i class="fas fas fa-shopping-bag"></i></a></li>
-      </ul>
+    <header>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><img src="bilder all/GameHub_Logo (1).png" alt=""></i></a>
+        <a href="index.html">Home</a>
+        <a href="games1.html">All Games</a>
+        <a href="about11.html">About</a>
+        <a href="contact11.html">Contact</a>
+        <a href="cart.html"><i class="fas fas fa-shopping-cart"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </nav>
+    </header>
     <main>
-      <h1>Contact</h1>
+    
+        <div class="logo"><img src="bilder all/GameHub_Logo (1).png" alt="gamehublogo"></div>
+    
+      <h1>Get in touch!</h1>
     
      
     </div>
 
+<section class="formen">
     <div class="main2">
         
       <div class="container2">
@@ -80,32 +97,12 @@
           <a href="index.html"><input type="submit" value="submit"/></a>
         </form>
       </div>
-
+    </section>
     </main>
 
     <footer>
-      <br>
-      <div class="footer">
-        <br>
-      <ul class="socials">
-        <li>
-          <a href="ttps://www.facebook.com/ "> <i class="fab fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/?lang=nb"> <i class="fab fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="https://www.google.com/"> <i class="fab fa fab fa-google"></i></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/"> <i class="fab fab fa-youtube"></i></a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/en/"> <i class="fab fa fab fa-tiktok"></i></a>
-        </li>
-      </ul>
-       <br>&copy;2023
-      </div>
+      
     </footer>
+    
   </body>
 </html>
