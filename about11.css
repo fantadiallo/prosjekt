@@ -76,6 +76,9 @@ body {
     display: block;
     text-align: left;
   }
+  .gametext p {
+    font-size: 11px;
+  }
 }
 img {
   max-width: 100%;
@@ -90,7 +93,7 @@ img {
   background-image: url(bilder/nyb.jpg);
   background-position: center;
   background-size: cover;
-  background-color: #705a6a;
+  background-color: #3d3b3d;
   height: 40vh;
   font-size: 16px;
   color: white;
@@ -126,6 +129,12 @@ img {
 .fanta button {
   padding: 5px;
   border-radius: 20px;
+  border: 2px solid black;
+  background: rgb(22, 49, 85);
+  color: white;
+}
+button:hover {
+  color: lightgreen;
 }
 
 .developer img {
@@ -134,7 +143,8 @@ img {
 }
 
 footer {
-  margin-bottom: 0;
-  background-color: black;
+  margin-top: auto;
+  background: black;
   padding: 40px;
+  color: white;
 }

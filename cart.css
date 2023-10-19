@@ -149,9 +149,8 @@ p {
   font-size: 20px;
 }
 footer {
-  padding-top: 0;
+  margin-top: auto;
   background: black;
   padding: 40px;
   color: white;
-  text-align: center;
 }

@@ -12,6 +12,8 @@ body {
   min-height: 100vh;
   background: white;
   color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 .topnav {
@@ -77,72 +79,66 @@ body {
     text-align: left;
   }
 }
+@media screen and (max-width: 300px) {
+  iframe {
+    width: 200px;
+    height: auto;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
 }
+section {
+  background: white;
+}
+main {
+  background: #705a6a;
+}
 .logo {
   max-width: 300px;
   margin-left: auto;
-  padding: 10px;
-}
-.maincontainer1 {
   padding: 20px;
-  width: 100%;
-  text-align: left;
-  background-blend-mode: multiply;
-  justify-content: space-around;
-  background-position: center;
-  background-size: cover;
-  background-color: #705a6a;
-  height: 65vh;
-  color: white;
-  font-size: 16px;
-  display: flex;
-  gap: 40px;
 }
+
 iframe {
   max-width: 300px;
-  height: auto;
-  padding: 10px;
+  padding: 20px;
 }
 .gta {
   max-width: 300px;
-  padding: 10px;
+  padding: 20px;
 }
 
+.watchit {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 20px;
+  margin: auto;
+}
 .maitext {
+  color: white;
   max-width: 500px;
-  line-height: 20px;
-  padding: 10px;
-  text-align: left;
+  padding: 20px;
 }
-.out {
-  font-size: 22px;
-  padding: 10px;
-}
-.row button {
+button {
   padding: 10px;
   border-radius: 20px;
-  border: 2px solid white;
-  color: black;
-}
-
-.row button:hover {
-  background: darkgreen;
+  border: 2px solid black;
+  background: green;
   color: white;
 }
-.row a {
-  color: rgb(26, 241, 241);
+main button:hover {
+  background-color: darkgreen;
+  color: black;
 }
+main a {
+  color: white;
+}
+
 footer {
-  margin-bottom: 0;
-  background-color: black;
+  margin-top: auto;
+  background: black;
   padding: 40px;
-}
-@media screen and (max-width: 600px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
+  color: white;
 }

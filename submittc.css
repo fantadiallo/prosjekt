@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 5px;
+}
+body {
+  min-height: 100vh;
+  background: rgb(21, 38, 83);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+img {
+  max-width: 30%;
+  height: auto;
+}
+
+section {
+  text-align: center;
+  font-size: 50px;
+  background: plum;
+  padding: 20px;
+}
+
+.maincontainer {
+  width: 100%;
+  text-align: center;
+  background-blend-mode: multiply;
+  justify-content: space-around;
+  background-image: url(bilder/24a5bc14faa8f69c74a9a8d7b729509841a1c9046bc9a7f3.avif);
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  height: 50vh;
+}
+a {
+  color: white;
+}
+
+a:hover {
+  color: rgb(7, 79, 162);
+}
+h2 {
+  font-size: 40px;
+}

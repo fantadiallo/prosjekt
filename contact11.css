@@ -12,6 +12,8 @@ body {
   min-height: 100vh;
   background: #f2f2f2;
   color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 .topnav {
@@ -126,6 +128,7 @@ input[type="submit"] {
   padding: 12px 20px;
   border-radius: 4px;
   cursor: pointer;
+  border: 2px solid black;
 }
 input[type="submit"]:hover {
   background-color: yellow;
@@ -139,9 +142,8 @@ input[type="submit"]:hover {
   margin: auto;
 }
 footer {
-  padding-top: 0;
+  margin-top: auto;
   background: black;
   padding: 40px;
   color: white;
-  text-align: center;
 }
