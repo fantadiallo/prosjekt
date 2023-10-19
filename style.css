@@ -63,7 +63,7 @@ img {
   text-align: center;
   background-blend-mode: multiply;
   justify-content: space-around;
-  background-image: url(bilder/games/RW10idH.jpg);
+  background-image: url(bilder/mainimgc/fornitebetdre.jpg);
   background-position: center;
   background-size: cover;
   background-color: #705a6a;
@@ -87,7 +87,7 @@ img {
 }
 
 .playbtn button {
-  font-size: 20px;
+  font-size: 30px;
   background: black;
   border: 2px solid black;
   color: yellow;
@@ -225,6 +225,7 @@ footer {
   color: white;
 }
 
+/*mediaqueries*/
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -256,10 +257,7 @@ footer {
     display: block;
     text-align: left;
   }
-  .maintext {
-    font-size: 10px;
-    max-width: 300px;
-  }
+
   main {
     display: flex;
     flex-direction: column;
@@ -272,8 +270,5 @@ footer {
   .imt2,
   .imt3 {
     font-size: 12px;
-  }
-  h1 {
-    font-size: 25px;
   }
 }

@@ -14,8 +14,9 @@ body {
   text-align: center;
 }
 img {
-  max-width: 30%;
+  max-width: 60%;
   height: auto;
+  padding: 20px;
 }
 
 section {
@@ -25,17 +26,6 @@ section {
   padding: 20px;
 }
 
-.maincontainer {
-  width: 100%;
-  text-align: center;
-  background-blend-mode: multiply;
-  justify-content: space-around;
-  background-image: url(bilder/24a5bc14faa8f69c74a9a8d7b729509841a1c9046bc9a7f3.avif);
-  background-position: center;
-  background-size: cover;
-  align-items: center;
-  height: 50vh;
-}
 a {
   color: white;
 }

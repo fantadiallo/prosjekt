@@ -10,10 +10,11 @@
 }
 body {
   min-height: 100vh;
-  background: #f2f2f2;
+  background: rgb(142, 110, 142);
   color: black;
   display: flex;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav {
@@ -47,6 +48,74 @@ body {
   display: none;
 }
 
+/*main content*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+.logo {
+  max-width: 300px;
+  margin-left: auto;
+  padding: 10px;
+}
+h1 {
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+}
+.underplace {
+  background: white;
+}
+form {
+  color: white;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+  font-size: 20px;
+  bottom: 0px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: rgb(173, 101, 173);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid white;
+}
+input[type="submit"]:hover {
+  background-color: rgb(240, 240, 4);
+  color: black;
+}
+.container2 {
+  border-radius: 5px;
+  background-color: #0c143f;
+  padding: 40px;
+  max-width: 600px;
+  color: white;
+  margin: auto;
+}
+footer {
+  margin-top: auto;
+  background: black;
+  padding: 40px;
+  color: white;
+}
+/*mediaqueries*/
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -78,72 +147,4 @@ body {
     display: block;
     text-align: left;
   }
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.logo {
-  max-width: 300px;
-  margin-left: auto;
-  padding: 10px;
-}
-h1 {
-  padding: 20px;
-}
-
-main {
-  margin: auto;
-  background: #f2f2f2;
-  color: black;
-}
-section {
-  padding: 20px;
-  background: rgb(142, 110, 142);
-}
-form {
-  color: white;
-  justify-content: center;
-  width: 100%;
-  height: 90%;
-  font-size: 20px;
-  bottom: 0px;
-}
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid black;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 20px;
-  resize: vertical;
-}
-
-input[type="submit"] {
-  background-color: aquamarine;
-  color: black;
-  padding: 12px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  border: 2px solid black;
-}
-input[type="submit"]:hover {
-  background-color: yellow;
-}
-.container2 {
-  border-radius: 5px;
-  background-color: #0c143f;
-  padding: 40px;
-  max-width: 600px;
-  color: white;
-  margin: auto;
-}
-footer {
-  margin-top: auto;
-  background: black;
-  padding: 40px;
-  color: white;
 }
