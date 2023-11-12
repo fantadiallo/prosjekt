@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background: white;
   color: black;
   font-family: Yatra;
@@ -53,7 +54,6 @@ img {
   height: auto;
 }
 main {
-  margin: auto;
   align-items: center;
 }
 
@@ -67,7 +67,7 @@ main {
   background-position: center;
   background-size: cover;
   background-color: #3c4f56;
-  height: 50vh;
+  height: 40vh;
   color: yellow;
   font-size: 16px;
 }
