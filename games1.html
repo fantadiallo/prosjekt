@@ -1,40 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>games</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
       rel="stylesheet"
-    >
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <script defer="js/listofproducts.js"></script>
     <link rel="stylesheet" type="text/css" href="games1.css" />
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
   </head>
 
   <body>
@@ -62,112 +38,20 @@
           <h2>Adventure time</h2>
           <p>explor the woods and figth monstors</p>
           <form action="about11.html" method="get">
-            <button>play<i class="fas fas fas fa-play"></i></button>
+            <button>play <i class="fas fas fas fa-play"></i></button>
           </form>
-       
         </div>
       </div>
 
       <h3>All Games</h3>
       <div class="logo">
         <img src="bilder/compressed/GameHub_Logoup.jpg" alt="logo" />
+        <h4>Game hub game of universe</h4>
       </div>
-      <div class="underh"><p>Game hub game of universe</p></div>
 
-      <div class="column">
-        <div class="row1">
-          <div class="img1">
-            <a href="clickky.html"
-              ><img src="bilder/gamescomp/fornite.jpg" alt="fornite"></a>
-              <p>
-                Fortnite
-                <a href="cart.html"><i class="fas fas fa-shopping-bag"></i></a>
-              </p>
-              <p>100$</p>
-            
-          </div>
-          <div class="img1">
-              <a href="clickky.html"><img src="bilder/gamescomp/spiderman.jpg" alt="spiderman"></a>
-              <p>
-                Spiderman
-              </p><p><a href="cart.html"></a><i class="fas fas fa-shopping-bag"></i></a>
-              </p>
-              <p>100$</p>
-          </div>
-          <div class="img1">
-            <a href="clickky.html">
-           <img src="bilder/gamescomp/farcry6.jpg" alt="cry"></a>
-              <p>
-                FarCRY
-                <a href="cart.html"><i class="fas fas fa-shopping-bag"></i></a>
-              </p>
-              <p>100$</p>            >
-          </div>
-          <div></div>
-        </div>
-        <div class="row2">
-          <div class="img2">
-            <a href="clickky.html"
-              ><img src="bilder/gamescomp/Horizon.jpg" alt="horizon"></a>
-              <p> Horizon
-               <a href="cart.html"><i class="fas fas fa-shopping-bag"></i></a>
-              </p>
-              <p>100$</p>
-          </div>
-          <div class="img2">
-            <a href="clickky.html"
-              ><img src="bilder/gamescomp/fifa.jpg" alt="fifa"></a>
-              <p>
-                FIFA
-                <a href="cart.html"><i class="fas fas fa-shopping-bag"></i></a>
-              </p>
-              <p>100$</p>
-            
-          </div>
-          <div class="img2">
-            <a href="clickky.html"
-              ><img
-                src="bilder/gamescomp/callofdutyup.jpg"
-                alt="call of duty"></a>
-              <p>
-                Call of duty
-                <a href="cart.html"><i class="fas fas fa-shopping-bag"></i></a
-                ></p>
-                <p>100$</p>
-              
-          </div>
-        </div>
-
-        <div class="row3">
-          <div class="img3">
-            <a href="clickky.html"
-              ><img src="bilder/gamescomp/up2kp.jpg" alt="2k"></a>
-              
-              <p>
-                NBA 2023<a href="cart.html"><i class="fas fas fa-shopping-bag"></i
-                ></a>
-              </p>
-              <p>100$</p>
-          </div>
-          <div class="img3">
-            <a href="clickky.html"
-              ><img src="bilder/gamescomp/ratchet clan.jpg" alt="clan"></a>
-              <p>
-                Rachetclan
-                <a href="cart.html"><i class="fas fas fa-shopping-bag"></i></a>
-              </p>
-              <p>100$</p>
-        
-          </div>
-          <div class="img3">
-            <a href="clickky.html"
-              ><img src="bilder/gamescomp/battlefield.jpg" alt="battle"></a>
-              <p>
-                Battlefield
-                <a href="cart.html"><i class="fas fas fa-shopping-bag"></i></a>
-              </p>
-              <p>100$</p>
-          </div>
+      <div class="Container">
+        <div class="results">
+          <div class="loader"></div>
         </div>
       </div>
     </main>
@@ -176,4 +60,7 @@
       <p>&copy;2023</p>
     </footer>
   </body>
+  <script src="js/navigation.js"></script>
+  <script src="components.js/message.js"></script>
+  <script src="js/productlist.js"></script>
 </html>

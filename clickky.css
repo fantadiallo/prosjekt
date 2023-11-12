@@ -17,6 +17,36 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+i {
+  color: black;
+}
+
+/*loader style*/
+.loader {
+  border: 16px solid lightgrey;
+  border-top: 16px solid#0d3875;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .topnav {
   overflow: hidden;
   padding: 15px;
@@ -36,12 +66,15 @@ body {
 }
 
 .topnav a:hover {
-  color: green;
+  color: rgb(196, 247, 196);
 }
 
 .topnav a.active {
   color: white;
   max-width: 150px;
+}
+.cart p {
+  color: yellow;
 }
 
 .topnav .icon {
@@ -53,52 +86,52 @@ img {
   max-width: 100%;
   height: auto;
 }
-section {
+.images {
+  max-width: 300px;
+  padding: 20px;
+}
+.breadcrumb-nav,
+a {
+  padding: 20px;
+  color: white;
+}
+
+.game-details {
+  text-align: center;
+  margin: 0%;
+  padding: 50px;
+  color: white;
+
+  background: rgb(39, 56, 88);
+}
+
+.container {
+  background: #705a6a;
+  padding: 30px;
+}
+.details-description {
+  line-height: 30px;
+}
+.price {
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 8px;
+  color: darkgreen;
+}
+.age {
+  color: yellow;
+}
+.section {
   background: white;
 }
-main {
-  background: #705a6a;
-}
+
 .logo {
   max-width: 300px;
   margin-left: auto;
   padding: 20px;
-}
-
-iframe {
-  max-width: 500px;
-  padding: 20px;
-}
-.gta {
-  max-width: 300px;
-  padding: 20px;
-}
-
-.watchit {
-  flex-wrap: wrap;
-  display: flex;
-  padding: 20px;
-  margin: auto;
-}
-.maitext {
-  color: white;
-  max-width: 500px;
-  padding: 20px;
-}
-button {
-  padding: 10px;
-  border-radius: 20px;
-  border: 2px solid black;
-  background: green;
-  color: white;
-}
-main button:hover {
-  background-color: darkgreen;
-  color: black;
-}
-
-main a {
-  color: white;
 }
 
 footer {
