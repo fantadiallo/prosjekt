@@ -181,7 +181,7 @@ footer {
     height: auto;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .images {
     max-width: 200px;
     height: auto;
