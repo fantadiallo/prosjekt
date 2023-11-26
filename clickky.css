@@ -89,6 +89,7 @@ img {
 .images {
   max-width: 300px;
   padding: 20px;
+      align-items: center;
 }
 .breadcrumb-nav,
 a {
@@ -180,3 +181,12 @@ footer {
     height: auto;
   }
 }
+@media screen and (max-width: 300px) {
+  .images {
+    max-width: 200px;
+    height: auto;
+        align-items: center;
+    
+  }
+}
+
