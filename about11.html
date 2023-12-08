@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="gamehubgames">
     <title>about</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
@@ -28,35 +29,75 @@
     <script src="js/navigation.js"></script>
     
   </head>
-
   <body>
     <header>
-      <nav>
-        <div class="topnav" id="myTopnav">
-          <a href="index.html" class="active"
-            ><img src="bilder/compressed/blacklogo.jpg" alt="logo"
-          /></a>
-          <a href="index.html">Home</a>
-          <a href="games1.html">All Games</a>
-          <a href="about11.html">About</a>
-          <a href="contact11.html">Contact</a>
-          <a href="cart.html"><i class="fas fas fa-shopping-cart"></i></a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
+      <div class="topnav">
+        <span class="spanbar" onclick="openNav()">&#9776;</span>
+        <div class="logotop">
+
+          <img
+            src="bilder/compressed/blacklogo.jpg"
+            class="logoimg"
+            alt="gamehub"/>
+            
+        </div>
+        <div class="Corner">
+          <span class="spancart" onclick="openCart()"
+            ><i class="fas fas fa-shopping-cart"></i
+          ></span>
+          <div class="fav"></div>
+          <div class="LoginB">Loginn</div>
+          <div class="language">
+            <select class="selectContainer">
+              <option value="language">&#x1f1f3;&#x1f1f4;</option>
+              <option value="language">EN</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <nav class="sideNavContainer">
+        <div id="MysideNavigation" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="navLinks">
+            <div class="nav-itemH"><a href="index.html">Home</a></div>
+            <div class="nav-item2G">
+              <a href="games1.html"
+                >All Games</a
+              >
+            </div>
+            <div class="nav-item3Ab"><a href="about11.html">About</a></div>
+            <div class="nav-item4Co">
+              <a href="contact11.html"></i>Contact</a>
+            </div>
+            <div class="nav-item5LIN"><a href="loginn.html">LogInn</a></div>
+          </div>
         </div>
       </nav>
     </header>
     <main>
+      <nav class="sidecartcontainer">
+        <div id="MysideCart" class="sideCart">
+          <a href="javascript:void(0)" class="closebtn1" onclick="closeCart()"
+            >close</a
+          >
+          <div class
+          ="items">
+            <div class="message">your cart is emty</div>
+            <div class="price"></div>
+            <div class="total price"></div>
+            <div class="checkout"><button>checkout</button></div>
+          </div>
+        </div>
+      </nav>
       <div class="maincontainer">
         <div class="gametext">
           <h1>*About</h1>
           <p>Game hub inc</p>
           <p>is your one-stop shop for all things gaming</p>
-          <p>
-            Discover heart-pounding action, mind-bending puzzles, and
-            captivating storytelling that will keep you hooked for hours.
-          </p>
+          
           <p>GameHub Inc</p>
           <p>
             more than just a game store. It's a vibrant community where
@@ -66,11 +107,12 @@
           </p>
         </div>
       </div>
-      <div class="logo">
-        <img src="bilder/compressed/GameHub_Logoup.jpg" alt="logo" />
-      </div>
+
+    
+      
       <div class="maintext">
         <h2>Developer</h2>
+      
         <div class="fanta">
           <div class="developer">
             <img
@@ -79,12 +121,12 @@
             />
           </div>
           <div class="infodeveloper"></div>
-          <h3>Fanta</h3>
-          <p class="title">learning developer</p>
-          <p>HTML/CSS department</p>
-          <p>Fanta@example.com</p>
+          <h3>Fatou</h3>
+          <p class="title">Frontend Developer</p>
+          <p>design/HTML/CSS/javascript</p>
+          <p>Fatou@example.com</p>
           <p>
-            <form action=""></form>
+            <form action="contact11.html"></form>
             <a href="contact11.html"></a>
           </p>
         </div>
@@ -92,8 +134,34 @@
     </main>
 
     <footer>
-      <p>&copy;2023</p>
+      <div class="Fotcontainer">
+        <div class="footer-col">
+          <h3>useful links</h3>
+          <a href="index.html">Home</a>
+          <a href="games1.html">All games</a>
+          <a href="about11.html">About</a>
+          <a href="contact11.html">Contact</a>
+        </div>
+        <div class="footer-col" id="theinput">
+          <h3>NEWSLETTER</h3>
+          <input type="text" placeholder="Email-Adress" />
+          <button class="sub">Subscribe</button>
+        </div>
+        <div class="footer-col">
+          <h3>CONTACT</h3>
+          <p>34, Kingstoneroad, 2033, Canada, montereal</p>
+          <div class="socials">
+            <span style="color: darkblue;"> <i class="fas fas fab fa-facebook"></i></span>
+           <span style="color: lightblue;"><i class="fas fas fab fa-twitter"></i></span>
+            <span style="color: purple;"><i class="fas fas fab fa-instagram"></i></span>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
   
-</html>
+  <script src="components.js/message.js"></script>
+  <script src="js/productlist.js"></script>
+  <script src="js/navigation.js"></script>
+  </html>
+  

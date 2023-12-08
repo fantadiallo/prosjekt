@@ -23,12 +23,16 @@ async function fetGames() {
 fetGames();
 
 function createHTML(details) {
-  detailContainer.innerHTML = `<h1>${details.title}</h1>
+  detailContainer.innerHTML = `
  <img src=${details.image} alt="image" class="images"></img>
+ <h1>${details.title}</h1>
+ <div class"descontainer">
   <div class="details-description">${details.description}</div>
   <time class="details-date">Releseased:${details.released}
   </time> 
-  <div class="price">price:${details.price}</div>
-  <div class="ageRating">ageRating:${details.ageRating}</div>
-  <div class="cart"> <a href="cart.html"> <p> + add to cart</p></a></div>`;
+  <div class="price">price${details.price}</div>
+  <div class="discountedPrice">${details.discountedPrice}</div>
+  
+  <div class="ageRating">ageRating${details.ageRating}</div>
+  <div class="cart"> <a href="out.html"> <p> + add to cart</p></a></div></div>`;
 }

@@ -12,11 +12,13 @@ async function makeApiCall() {
 
     results.forEach(function (game) {
       resultsContainer.innerHTML += `<a href="clickky.html?id=${game.id}"class="card">
+        <img src=${game.image} class="images" alt="image" />
         <h1 class="title">${game.title}</h1>
-        <img src=${game.image} alt="image" class="images" />
         <p>${game.description}</p>
         <p class="category"${game.category}></p>
-        <p class="price">${game.price} </p> </a>
+        <p class="price">${game.price} </p>
+        <p class="discountedPrice">${game.discountedPrice}</p>
+        </a>
        
       `;
     });

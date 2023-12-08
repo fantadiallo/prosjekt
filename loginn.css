@@ -1,76 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
-  border-radius: 2px;
 }
 body {
   min-height: 100vh;
   background: #18181c;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  padding: 15px;
-  background-color: black;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding-top: 50px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.topnav a:hover {
-  color: green;
-}
-
-.topnav a.active {
-  color: white;
-  max-width: 150px;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    display: block;
-    color: white;
-    font-size: 50px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 5px;
-  }
-}
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-}
-body {
-  min-height: 100vh;
-  background: #18181c;
-  color: white;
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
@@ -79,6 +17,29 @@ header {
   background: black;
   color: white;
   max-width: 100%;
+}
+.main2 a, footer a {
+  color: white;
+}
+h3 {
+  color: plum;
+}
+a:hover {
+  color: plum;
+}
+form button {
+  border-radius: 2px;
+  padding: 4px;
+  border: none;
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.main2 {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
 }
 
 .spanbar {
@@ -144,7 +105,6 @@ img {
 .sideCart {
   position: relative;
   height: 65%;
-  color: black;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -173,78 +133,44 @@ img {
   margin-left: 50px;
 }
 
-/*main content */
-img {
-  max-width: 100%;
-  height: auto;
+.form-error {
+  display: none;
 }
-.maincontainer {
+#contactForm {
   padding: 10px;
+
+  color: white;
+  justify-content: center;
   width: 100%;
-  text-align: right;
-  background-blend-mode: multiply;
-  background-blend-mode: multiply;
-  justify-content: space-around;
-  background-image: url(bilder/compressed/controller-2618897_1280.jpg);
-  background-position: center;
-  background-size: cover;
-  background-color: #696d84;
+  max-height: 100%;
+  font-size: 20px;
+  border-radius: 10px;
 
-  height: 40vh;
-  font-size: 16px;
-  color: white;
-}
-.h2 {
-  font-size: 40px;
-  padding: 20px;
-}
-.logo {
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
-}
-.maintext {
-  background: #18181c;
-  padding: 20px;
-}
-.gametext {
-  max-width: 400px;
-  line-height: 25px;
-  text-align: center;
-  margin: auto;
-  font-size: 16px;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 10px;
-}
-.maintext p {
-  max-width: 400px;
-  line-height: 25px;
-  text-align: left;
-}
-.fanta {
-  background-color: #0000007c;
-  padding: 20px;
-  max-width: 350px;
-  color: white;
-  text-align: center;
-}
-a:hover{
-  color: plum;
-  
-}
-.fanta button {
-  padding: 5px;
-  border-radius: 20px;
-  border: 2px solid black;
-  background: rgb(22, 49, 85);
-  color: white;
+  background: #1b203d;
+  max-width: 600px;
 }
 
-.developer img {
-  border-radius: 50%;
-  max-width: 200px;
+#textera {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
 }
-
+.myinput {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
 footer {
   margin-top: auto;
   max-width: 100%;
@@ -315,4 +241,5 @@ footer button {
   }
 }
 
-/* mediaquery navigation*/
+
+

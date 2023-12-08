@@ -3,110 +3,194 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="gaehubcontact">
     <title>contact</title>
     <link
     href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
     rel="stylesheet">
 
-      <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer">
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+     
+  
     <link rel="stylesheet" type="text/css" href="contact11.css">
     <script src="js/navigation.js"></script>
 
   
   </head>
-
   <body>
     <header>
-    <nav>
-      <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active"><img src="bilder/compressed/blacklogo.jpg" alt="logo"></a>
-        <a href="index.html">Home</a>
-        <a href="games1.html">All Games</a>
-        <a href="about11.html">About</a>
-        <a href="contact11.html">Contact</a>
-        <a href="cart.html"><i class="fas fas fa-shopping-cart"></i></a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+      <div class="topnav">
+        <span class="spanbar" onclick="openNav()">&#9776;</span>
+        <div class="logotop">
+          <img
+            src="bilder/compressed/blacklogo.jpg"
+            class="logoimg"
+            alt="gamehub"
+          />
+        </div>
+        <div class="Corner">
+          <span class="spancart" onclick="openCart()"
+            ><i class="fas fas fa-shopping-cart"></i
+          ></span>
+          <div class="fav"></div>
+          <div class="LoginB">Loginn</div>
+          <div class="language">
+            <select class="selectContainer">
+              <option value="language">&#x1f1f3;&#x1f1f4;</option>
+              <option value="language">EN</option>
+            </select>
+          </div>
+        </div>
       </div>
-    </nav>
+
+      <nav class="sideNavContainer">
+        <div id="MysideNavigation" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="navLinks">
+            <div class="nav-itemH"><a href="index.html">Home</a></div>
+            <div class="nav-item2G">
+              <a href="games1.html"
+                >All Games</a
+              >
+            </div>
+            <div class="nav-item3Ab"><a href="about11.html">About</a></div>
+            <div class="nav-item4Co">
+              <a href="contact11.html"></i>Contact</a>
+            </div>
+            <div class="nav-item5LIN"><a href="loginn.html">LogInn</a></div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <div class="underplace">
+      <nav class="sidecartcontainer">
+        <div id="MysideCart" class="sideCart">
+          <a href="javascript:void(0)" class="closebtn1" onclick="closeCart()"
+            >close</a
+          >
+          <div class
+          ="items">
+            <div class="message">your cart is emty</div>
+            <div class="price"></div>
+            <div class="total price"></div>
+            <div class="checkout"><button>checkout</button></div>
+          </div>
+        </div>
+      </nav>
 
-        <div class="logo"><img src="bilder/compressed/GameHub_Logoup.jpg" alt="logo"></div>
-        <h1>Get in touch!</h1>
-      </div>
- 
+
+<aside class="aside">
+  <div class="askcontiner">
+    <h2 class="title">FAQ</h2>
+    <div class="faq">
+     <div class="question">
+       <h4>what is Gamehub?</h4>
+     <div class="answer">
+     <p>is a gamestore</p>
     </div>
-     
-       
-      
-    
-     
-   
+     </div>
+     <div class="faq">
+       <div class="question">where can i find more info?</div>
+     <div class="answer">
+     <a href="about11.html"></a>
+     </div>
+     </div>
+     <div class="faq">
+      <div class="question">why cant i checkout</div>
+    <div class="answer">
+      <p>when i figure out i will fix it</p>
+    </div>
+    </div>
+    <div class="faq">
+      <div class="question">favorite game?</div>
+    <div class="answer">
+      <p>Fornite</p>
+    </div>
+  </div>
+</div>
 
-<section class="formen">
-    <div class="main2">
-        
-      <div class="container2">
-        <h1>Contact us!</h1>
-       
-        <form action="submittc.html">
-           <label for="fname">Full Name</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="your name.."
-          />
-          <label for="birthday">Birthday:</label>
-          <input type="date" id="birthday" name="Birthday" />
-          <br />
-          <label for="Email">Email adress:</label>
-          <input type="email" id="email" name="email" placeholder="E-adress" />
-          <br />
-          <label for="country">country:</label>
+  <div class="myform">
+    <h1>Contact us</h1>
+    <div class="formCcontainer">
+    <form id="contactForm">
+      <div>
+      <label>
+        required
+        <input name="FirstName" id="firstName" class="myinput" placeholder="Firstname">
+      </label>
+      <div class="form-error" id="firstName"> please enter your first name</div>
+    </div>
+    <div>
+      <label>
+        last name (minimum 4 characters)
+      <input name="LastName" id="LastName" class="myinput"placeholder="last name">
+      </label>
+      <div class="form-error" id="LastNameError">your last name must be atlease 4 caracters</div>
+    </div>
+    <div>
+      <label>
+        E-mail requierd
+        <input name="text" id="email"class="myinput" placeholder="Email-adress">
+      </label>
+      <div class="form-error" id="emailError" class="myinput">please enter a valid email</div>
+    </div>
+    <div>
+      <label>
+        <input type="text" id="textera"class="myinput" placeholder="write to us!">
+      </label>
+      <div class="form-error" id="text"class="myinput"></div>
+    </div>
+    <button>submit</button>
 
-          <select id="country">
-            <option value="US">USA</option>
-            <option value="Norway">Norway</option>
-            <option value="France">France</option>
-            <option value="England">England</option>
-            <option value="Gambia">Gambia</option>
-          </select>
-          <label for="subject">subject</label>
-          <textarea
-            id="subject"
-            placeholder="Write to us..."
-            style="height: 200px"
-          ></textarea>
-          <a href="submittc.html"><input type="submit" value="submit"/></a>
-        </form>
+    </form>
+
+</div>
+</div>
+</div>
+
+
+
+</aside>
+</main>
+<footer>
+  <div class="Fotcontainer">
+    <div class="footer-col">
+      <h3>useful links</h3>
+      <a href="index.html">Home</a>
+      <a href="games1.html">All games</a>
+      <a href="about11.html">About</a>
+      <a href="contact11.html">Contact</a>
+    </div>
+    <div class="footer-col" id="theinput">
+      <h3>NEWSLETTER</h3>
+      <input type="text" placeholder="Email-Adress" />
+      <button class="sub">Subscribe</button>
+    </div>
+    <div class="footer-col">
+      <h3>CONTACT</h3>
+      <p>34, Kingstoneroad, 2033, Canada, montereal</p>
+      <div class="socials">
+        <span style="color: darkblue;"> <i class="fas fas fab fa-facebook"></i></span>
+       <span style="color: lightblue;"><i class="fas fas fab fa-twitter"></i></span>
+        <span style="color: purple;"><i class="fas fas fab fa-instagram"></i></span>
       </div>
-    </section>
+    </div>
  
-    </main>
-
-    <footer>
-      <p> &copy;2023</p>
-      
-
-    </footer>
-    
+</footer>
   </body>
- 
+  <script src="js/contactform.js"></script>
+ <script src="js/faq.js"></script>
   
 </html>

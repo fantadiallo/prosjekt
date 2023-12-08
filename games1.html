@@ -3,64 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="gamehuballgames">
     <title>games</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
+    href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="games1.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+     
+  
+    <link rel="stylesheet" type="text/css" href="games1.css">
     <script src="js/navigation.js"></script>
-  </head>
 
+  
+    
+  </head>
   <body>
     <header>
-      <nav>
-        <div class="topnav" id="myTopnav">
-          <a href="index.html" class="active"
-            ><img src="bilder/compressed/blacklogo.jpg" alt="logo"
-          /></a>
-          <a href="index.html">Home</a>
-          <a href="games1.html">All Games</a>
-          <a href="about11.html">About</a>
-          <a href="contact11.html">Contact</a>
-          <a href="cart.html"><i class="fas fas fa-shopping-cart"></i></a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
+      <div class="topnav">
+        <span class="spanbar" onclick="openNav()">&#9776;</span>
+        <div class="logotop">
+          <img
+            src="bilder/compressed/blacklogo.jpg"
+            class="logoimg"
+            alt="gamehub"
+          />
+        </div>
+        <div class="Corner">
+          <span class="spancart" onclick="openCart()"
+            ><i class="fas fas fa-shopping-cart"></i
+          ></span>
+          <div class="fav"></div>
+          <div class="LoginB">Loginn</div>
+          <div class="language">
+            <select class="selectContainer">
+              <option value="language">&#x1f1f3;&#x1f1f4;</option>
+              <option value="language">EN</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <nav class="sideNavContainer">
+        <div id="MysideNavigation" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="navLinks">
+            <div class="nav-itemH"><a href="index.html">Home</a></div>
+            <div class="nav-item2G">
+              <a href="games1.html"
+                >All Games</a
+              >
+            </div>
+            <div class="nav-item3Ab"><a href="about11.html">About</a></div>
+            <div class="nav-item4Co">
+              <a href="contact11.html"></i>Contact</a>
+            </div>
+            <div class="nav-item5LIN"><a href="loginn.html">LogInn</a></div>
+          </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="maincontainer">
-        <div class="matext">
-          <h1>New game</h1>
-          <h2>Adventure time</h2>
-          <p>explor the woods and figth monstors</p>
-          <form action="about11.html" method="get">
-            <button>play <i class="fas fas fas fa-play"></i></button>
-          </form>
+      <nav class="sidecartcontainer">
+        <div id="MysideCart" class="sideCart">
+          <a href="javascript:void(0)" class="closebtn1" onclick="closeCart()"
+            >close</a
+          >
+          <div class
+          ="items">
+            <div class="message">your cart is emty</div>
+            <div class="price"></div>
+            <div class="total price"></div>
+            <div class="checkout"><button>checkout</button></div>
+          </div>
         </div>
-      </div>
+      </nav>
 
-      <h3>All Games</h3>
-      <div class="logo">
-        <img src="bilder/compressed/GameHub_Logoup.jpg" alt="logo" />
-        <h4>Game hub game of universe</h4>
-      </div>
-
-      <div class="Container">
+<div class="starter">
+  <div class="breadcrumb-nav"><p><a href="index.html"> > Back to hompage</a></p><h1>ALL GAMES</h1></div>
+</div>
+     <div class="Container">
+  
         <div class="results">
           <div class="loader"></div>
         </div>
       </div>
     </main>
-
     <footer>
-      <p>&copy;2023</p>
+      <div class="Fotcontainer">
+        <div class="footer-col">
+          <h3>useful links</h3>
+          <a href="index.html">Home</a>
+          <a href="games1.html">All games</a>
+          <a href="about11.html">About</a>
+          <a href="contact11.html">Contact</a>
+        </div>
+        <div class="footer-col" id="theinput">
+          <h3>NEWSLETTER</h3>
+          <input type="text" placeholder="Email-Adress" />
+          <button class="sub">Subscribe</button>
+        </div>
+        <div class="footer-col">
+          <h3>CONTACT</h3>
+          <p>34, Kingstoneroad, 2033, Canada, montereal</p>
+          <div class="socials">
+            <span style="color: darkblue;"> <i class="fas fas fab fa-facebook"></i></span>
+           <span style="color: lightblue;"><i class="fas fas fab fa-twitter"></i></span>
+            <span style="color: purple;"><i class="fas fas fab fa-instagram"></i></span>
+          </div>
+        </div>
+     
     </footer>
   </body>
 
   <script src="components.js/message.js"></script>
   <script src="js/productlist.js"></script>
+  <script src="js/navigation.js"></script>
 </html>

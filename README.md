@@ -88,3 +88,9 @@ border-radius: 50px;
 background: #65757b;
 padding: 20px;
 }
+  <div class="textbox">
+    <p>Dive into a universe filled with an extensive collection of games that cater to every taste and preference</p>
+
+      background: #18181c;
+
+ 
