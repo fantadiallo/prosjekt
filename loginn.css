@@ -177,6 +177,13 @@ footer {
   background: #111;
   color: white;
 }
+a{
+  color: white;
+
+}
+a:hover{
+color: plum;
+}
 .Fotcontainer {
   display: flex;
   text-align: left;

@@ -118,26 +118,6 @@ img {
 .sidenav a:hover {
   color: plum;
 }
-footer {
-  margin-top: auto;
-  max-width: 100%;
-  background: #111;
-  color: white;
-}
-.Fotcontainer {
-  display: flex;
-  text-align: left;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  justify-content: space-around;
-}
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
 
 /*main content */
 img {
@@ -230,4 +210,71 @@ label {
 span.price {
   float: right;
   color: grey;
+}
+footer {
+  margin-top: auto;
+  width: 100%;
+  background: #111;
+  color: white;
+}
+.Fotcontainer {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-around;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+footer input {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+footer h3 {
+  color: plum;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: plum;
+  text-align: left;
+}
+footer i {
+  font-size: 20px;
+}
+#theinput {
+  text-align: center;
+}
+footer input {
+  color: white;
+  padding: 3px;
+  border-color: plum;
+  background-color: #111;
+  border-radius: 4px;
+  border: 2px 2px solid plum;
+}
+footer button {
+  background: rgb(32, 32, 96);
+}
+@media screen and (max-width: 600px) {
+  #theinput {
+    display: none;
+  }
+ 
+  .sideCart {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .LoginB {
+    display: none;
+  }
 }
