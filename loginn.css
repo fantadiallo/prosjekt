@@ -177,12 +177,19 @@ footer {
   background: #111;
   color: white;
 }
+.items{
+  color: black;
+}
 a{
   color: white;
 
 }
 a:hover{
 color: plum;
+}
+footer button {
+  padding: 4px;
+  color: white;
 }
 .Fotcontainer {
   display: flex;

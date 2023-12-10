@@ -15,6 +15,19 @@ body {
   flex-direction: column;
   font-family: Arial, sans-serif;
 }
+footer button {
+  padding: 4px;
+  color: white;
+}
+.items {
+  padding: 10px;
+  color: black;
+}
+.closebtn1 {
+  padding: 5px;
+  color: black;
+}
+
 header {
   background: black;
   color: white;
@@ -252,7 +265,7 @@ img {
   max-width: 1000px;
 }
 .btninfo {
-  border-color: yellow;
+  border-color: grey;
   cursor: pointer;
 }
 .h1 {
@@ -261,6 +274,31 @@ img {
 }
 .pintro2 {
   font-size: 14px;
+}
+.loader {
+  border: 16px solid lightgrey;
+  border-top: 16px solid#0d3875;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .intro {
@@ -333,7 +371,7 @@ img {
   padding: 5px;
   background: rgb(255, 255, 255);
   border-radius: 4px;
-  color: rgb(241, 127, 241);
+  color: black;
 }
 a {
   color: white;
@@ -375,10 +413,13 @@ a:hover {
   text-align: left;
 }
 .title {
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 5px;
   text-transform: uppercase;
   color: white;
+}
+p {
+  font-size: 0.8rem;
 }
 
 .price {
@@ -386,7 +427,7 @@ a:hover {
   text-transform: capitalize;
   text-align: left;
   align-items: center;
-  font-size: 12ppx;
+  font-size: 12px;
   padding: 8px;
   color: white;
 

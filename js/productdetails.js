@@ -25,7 +25,7 @@ fetGames();
 function createHTML(details) {
   detailContainer.innerHTML = `
  <img src=${details.image} alt="image" class="images"></img>
- <h1>${details.title}</h1>
+ <h2>${details.title}</h2>
  <div class"descontainer">
   <div class="details-description">${details.description}</div>
   <time class="details-date">Releseased:${details.released}

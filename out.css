@@ -20,7 +20,7 @@ header {
   color: white;
   max-width: 100%;
 }
-.sideCart a{
+.sideCart a {
   color: black;
 }
 
@@ -211,6 +211,10 @@ span.price {
   float: right;
   color: grey;
 }
+footer button {
+  padding: 4px;
+  color: white;
+}
 footer {
   margin-top: auto;
   width: 100%;
@@ -268,7 +272,7 @@ footer button {
   #theinput {
     display: none;
   }
- 
+
   .sideCart {
     max-width: 300px;
   }
