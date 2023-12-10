@@ -358,11 +358,15 @@ img {
 }
 .infoContainer {
   padding: 10px;
+  text-align: center;
 }
 .REKL {
   color: white;
   padding: 10px;
   font-size: 20px;
+}
+.new2 {
+  padding: 10px;
 }
 .infoC {
   text-align: center;
@@ -412,6 +416,7 @@ a:hover {
   border-radius: 15px;
   text-align: left;
 }
+
 .title {
   font-size: 1rem;
   padding: 5px;

@@ -27,7 +27,11 @@
     referrerpolicy="no-referrer"
   >
   <link rel="stylesheet" type="text/css" href="about11.css" >
-  <script src="js/navigation.js"></script>
+  <script defer src="js/navigation.js"></script>
+  <script defer src="js/productlist.js"></script>
+  <script defer src="js/slider.js"></script>
+  <script defer src="js/navigation.js"></script>
+  <script defer src="components.js/message.js"></script>
   
   </head>
   <body>
@@ -113,17 +117,20 @@
       
         
         </div>
-        <div class="playcontainer"> <button class="playBtn"><a href="games1.html">P l a y !</a></button></a></div>
-    </div>
+        <div class="playcontainer"> 
+          <form action="games1.html" method="get"><button class="playBtn">P l a y !</button></div>
+          </form>
+          </div>
     
       </div>
+     
      
    
      
       <div class="infoContainer">
       <div class="infoC">
 <p>Dive into a universe filled with an extensive collection of games that cater to every taste and preference</p>
-<button class="btninfo"><a href="about11.html"></a>Read more..</a></button>
+<form action="about11.html"><button class="btninfo">Read more..</button></form>
       </div>
     </div>
     <div class="explor">
@@ -133,10 +140,13 @@
       
 
       </div>
-    </div>
-<h2 class="nescl3">NEWSLETTER</h2>
+      <div class="new2">
+      <h2 class="nescl3">NEWSLETTER</h2>
 <p class="subConta">subscribe to our NEWSLETTER to be notified first!</p>
 <h2>Coming soon..</h2>
+</div>
+    </div>
+
 
 
 <div class="catoContainer">
@@ -145,19 +155,35 @@
     
 
     <img src="bilder/compressed/forti.jpg" alt="fortnite" class="catImage">
-    <div class="textt"><a href="games1.html">FORNITE</a></div>
+    <div class="textt">
+      <form action="">FORNITE</form>
+    </div>
+  
   </div>
   <div class="category">
    
     <img src="bilder/compressed/cyberpunk2.jpg" alt="cyberpunk" class="catImage">
-    <div class="textt"> <a href="games1.html">CYBERPUNK</a></div>
+    <div class="textt">
+      <form action="games1.html" method="get">
+        CYBERPUNK
+      </form>
+      
+   </div>
   </div>
   <div class="caegoryt">
    <img src="bilder/mainimgc/evilgyal.jpg" alt="woman" class="catImage">
-    <div class="textt"> <a href="games1.html">EVIL WOMAN CRY</a></div>
+    <div class="textt"> <form action="games1.html" method="get">
+      EVIL WOMAN CRY
+    </form>
+      </div>
   </div>
 </div>
-<div class="subb"><button class="btnsub"><a href="loginn.html">Subscribe Now!</a></button></div>
+<div class="subb">
+  <form action="loginn.html" method="get">
+    <button class="btnsub">Subscribe Now!</button>
+    
+  </form>
+  </div>
 
 </div>
 <div class="main2">
@@ -199,8 +225,5 @@
     </footer>
     
   </body>
-  <script src="js/productlist.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/navigation.js"></script>
-  <script src="components.js/message.js"></script>
+
 </html>
