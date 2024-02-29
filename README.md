@@ -1,55 +1,70 @@
-# Project Title
+# Your project title
 
-Simple overview of use/purpose.
+![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+
+A simple overview of the use/purpose of the project.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Add a more detailed description of what your project entails and set out to do.
+
+You can add some bullet points if you'd like to:
+
+- List item 1
+- List item 2
+- List item 3
+
+## Built With
+
+You can list a the tech stack that you've used over here
+
+- [React.js](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com)
 
 ## Getting Started
 
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
-### Executing program
+1. Clone the repo:
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
+```bash
+git clone git@github.com:NoroffFEU/portfolio-1-example.git
 ```
 
-## Help
+2. Install the dependencies:
 
-Any advise for common problems or issues.
 ```
-command to run if program contains helper info
+npm install
 ```
 
-## Authors
+### Running
 
-Contributors names and contact info
+Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+To run the app, run the following commands:
 
-## Version History
+```bash
+npm run start
+```
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+## Contributing
+
+Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+
+## Contact
+
+This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+
+[My Twitter page](www.twitter.com)
+
+[My LinkedIn page](www.linkedin.com)
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
 
 ## Acknowledgments
+
+This is where you can add any ackn
