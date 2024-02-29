@@ -6,9 +6,9 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const url = "https://api.noroff.dev/api/v1/gamehub/" + id;
+const url = "https://freeminds.no/wp-json/wc/store/products/" + id;
 
-async function fetGames() {
+async function fetchGames() {
   try {
     const response = await fetch(url);
     const details = await response.json();
@@ -20,19 +20,16 @@ async function fetGames() {
   }
 }
 
-fetGames();
+fetchGames();
 
 function createHTML(details) {
   detailContainer.innerHTML = `
- <img src=${details.image} alt="image" class="images"></img>
- <h2>${details.title}</h2>
- <div class"descontainer">
-  <div class="details-description">${details.description}</div>
-  <time class="details-date">Releseased:${details.released}
-  </time> 
-  <div class="price">price${details.price}</div>
-  <div class="discountedPrice">${details.discountedPrice}</div>
-  
-  <div class="ageRating">ageRating${details.ageRating}</div>
-  <div class="cart"> <a href="out.html"> <p> + add to cart</p></a></div></div>`;
+    <img src="${details.images[0].src}" alt="${details.name}" class="images">
+    <h2>${details.name}</h2>
+    <div class="descontainer">
+      <div class="images">${details.description}</div>
+      <div class="price">${details.price_html}</div>
+      <div class="newprice">120$</div>
+      <div class="cart"><a href="out.html"><p>+ add to cart</p></a></div>
+    </div>`;
 }

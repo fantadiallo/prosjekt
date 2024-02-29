@@ -1,4 +1,4 @@
-const url = "https://api.noroff.dev/api/v1/gamehub";
+const url = "https://freeminds.no/wp-json/wc/store/products";
 
 const resultsContainer = document.querySelector(".results");
 
@@ -12,12 +12,9 @@ async function makeApiCall() {
 
     results.forEach(function (game) {
       resultsContainer.innerHTML += `<a href="clickky.html?id=${game.id}"class="card">
-        <img src=${game.image} class="images" alt="image" />
-        <h2 class="title">${game.title}</h2>
+       <h2 class="title">${game.name}</h2>
         <p>${game.description}</p>
-        <p class="category"${game.category}></p>
-        <p class="price">${game.price} </p>
-        <p class="discountedPrice">${game.discountedPrice}</p>
+        <p class="price">${game.price_html} </p>
         </a>
        
       `;
