@@ -1,70 +1,31 @@
-# Your project title
+# WordPress + WooCommerce Products API Integration
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
-
-A simple overview of the use/purpose of the project.
+![WordPress + WooCommerce](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This project involves integrating the WordPress REST API with a headless WordPress + WooCommerce setup to manage products for a website. The main objective is to use JavaScript to fetch the list of WordPress products and display them dynamically on the site. 
 
-You can add some bullet points if you'd like to:
+The project includes the following tasks:
 
-- List item 1
-- List item 2
-- List item 3
+- Setup and configuration of a headless WordPress + WooCommerce API
+- Fetching the WordPress API as a data source and displaying it in the cross-course project
+- Implementation of JavaScript functionalities to interact with the WordPress API, including fetching an array of product data and rendering product grids and detail pages
+- Deployment of the cross-course project to a static hosting service
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- [WordPress](https://wordpress.org/)
+- [WooCommerce](https://woocommerce.com/)
+- JavaScript
 
 ## Getting Started
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+To get started with this project, follow these steps:
 
-1. Clone the repo:
-
-```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
-```
-
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
+1. Clone the GitHub repository:
 
 ```bash
-npm run start
-```
-
-## Contributing
-
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
-
-## Contact
-
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any ackn
+git clone git@github.com:YourUsername/YourRepository.git
