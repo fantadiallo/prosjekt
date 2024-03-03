@@ -16,8 +16,10 @@ The project includes the following tasks:
 - [WordPress](https://wordpress.org/)
 - [WooCommerce](https://woocommerce.com/)
 - JavaScript
-
-## Getting Started
+- html
+- css
+-
+- ## Getting Started
 
 ### Installing
 
