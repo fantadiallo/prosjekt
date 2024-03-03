@@ -5,23 +5,24 @@ const LastName = document.querySelector("#LastName");
 const LastNameError = document.querySelector("#LastNameError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
-const text = document.querySelector("#text");
-const textError = document.querySelector("#textError");
-const password = document.querySelector("#password");
-const passwordError = document.querySelector("#passwordError");
+const textera = document.querySelector("#textera");
+const textError = document.querySelector("#texteraError");
+const subject = document.querySelector("#subject");
+const subjectError = document.querySelector("#subjectError");
+
 function validateForm() {
   event.preventDefault();
 
-  if (checkLength(firstName.value, 0) === true) {
+  if (checkLength(firstName.value, 6) === true) {
     firstNameError.style.display = "none";
   } else {
     firstNameError.style.display = "block";
   }
 
-  if (checkLength(firstName.value, 3) === true) {
-    firstNameError.style.display = "none";
+  if (checkLength(LastName.value, 6) === true) {
+    LastNameError.style.display = "none";
   } else {
-    firstNameError.style.display = "block";
+    LastNameError.style.display = "block";
   }
 
   if (validateEmail(email.value) === true) {
@@ -29,25 +30,31 @@ function validateForm() {
   } else {
     emailError.style.display = "block";
   }
-  if (checkLength(password.value, 7) === true) {
-    passwordError.style.display = "none";
+
+  if (checkLength(textera.value, 25) === true) {
+    textError.style.display = "none";
   } else {
-    password.style.display = "block";
+    textError.style.display = "block";
+  }
+  if (checkLength(subject.value, 15) === true) {
+    subjectError.style.display = "none";
+  } else {
+    subjectError.style.display = "block";
   }
 }
 
 form.addEventListener("submit", validateForm);
 
 function checkLength(value, len) {
-  if (value.trim().length > len) {
+  if (value.trim().length >= len) {
     return true;
   } else {
     return false;
   }
 }
 
-function validateForm(email) {
-  const regEx = /\s+@\s+\s+/;
+function validateEmail(email) {
+  const regEx = /\S+@\S+\.\S+/;
   const patternMatches = regEx.test(email);
   return patternMatches;
 }

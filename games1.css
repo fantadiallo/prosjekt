@@ -53,6 +53,14 @@ img {
 .logotop {
   margin: auto;
 }
+.price{
+  max-width: 150px;
+  background-color: black;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  }
 
 .topnav {
   display: flex;
@@ -242,11 +250,10 @@ p {
 /*loader style ending */
 /*error message styles */
 .error {
-  color: #d8000c;
-  background-color: #ffbaba;
+  color: white;
   padding: 5px;
   max-width: 200px;
-  border: 2px solid red;
+  border: 2px solid white;
   display: none;
 }
 .starter {
@@ -266,10 +273,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 h1 {
   padding: 20px;
   color: white;
@@ -284,63 +288,45 @@ main {
   font-size: 3rem;
   margin-bottom: 1.5rem;
 }
-
-.results {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  text-align: center;
-  flex-wrap: wrap;
-  padding: 40px;
+/**/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
+/* Style for the product card */
 .card {
-  width: 250px;
-  height: 300px;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  align-items: center;
-  border-radius: 5px;
-  padding: 10px;
-  transition: all 0.3s ease-in;
-  font-size: 9px;
+  background-color: #05050578;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
   color: white;
 }
-.images {
-  width: 140px;
-  padding: 7px;
-  height: auto;
-  border-radius: 15px;
-  text-align: left;
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.images{
+  max-width: 300px;
 }
 .title {
-  font-size: 0.8rem;
-  padding: 5px;
-  text-transform: uppercase;
-  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .price {
   font-weight: bold;
-  text-transform: capitalize;
-  text-align: left;
-  align-items: center;
-  font-size: 12ppx;
-  padding: 8px;
-  color: white;
-
-  text-decoration: line-through;
 }
-.discountedPrice {
-  background: rgb(51, 51, 232);
-  max-width: 50px;
-  padding: 4px;
-  border: 2px 2px solid black;
-  border-radius: 4px;
-  font-size: 12px;
+.descriptiont{
+  padding: 5px;
+  font-size: 16px;
+  max-width: 500px;
+}
+.shorty {
+max-width: 600px;
+line-height: 26px;
 }
 /*loader style*/
 
