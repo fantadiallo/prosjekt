@@ -1,7 +1,5 @@
 # WordPress + WooCommerce Products API Integration
 
-![WordPress + WooCommerce](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
-
 ## Description
 
 This project involves integrating the WordPress REST API with a headless WordPress + WooCommerce setup to manage products for a website. The main objective is to use JavaScript to fetch the list of WordPress products and display them dynamically on the site. 
