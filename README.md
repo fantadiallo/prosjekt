@@ -29,3 +29,8 @@ To get started with this project, follow these steps:
 
 ```bash
 git clone git@github.com:YourUsername/YourRepository.git
+
+
+### If you want to contribute, I would appreciate it if you open a pull request, so that the code can be reviewed.
+
+
