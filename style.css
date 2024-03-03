@@ -365,7 +365,7 @@ img {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-decoration: none;
-  color: #333;
+
 }
 
 .card:hover {
@@ -380,8 +380,8 @@ img {
   max-width: 550px;
 }
 .shorty {
-max-width: 600px;
-line-height: 26px;
+max-width: 700px;
+line-height: 24px;
 }
 .infoContainer {
   padding: 10px;
@@ -421,21 +421,7 @@ a:hover {
   border-radius: 10px;
 }
 
-.card {
-  width: 250px;
-  height: 300px;
-  position: relative;
 
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  align-items: center;
-  border-radius: 5px;
-  padding: 10px;
-  transition: all 0.3s ease-in;
-  font-size: 9px;
-  color: white;
-}
 .images {
   width: 140px;
   padding: 7px;
@@ -458,8 +444,8 @@ p {
   max-width: 150px;
   background-color: black;
   border-radius: 6px;
-  font-size: 16px;
-  padding: 10px;
+  font-size: 12px;
+  padding: 5px;
   cursor: pointer;
   }
 .myinput {
